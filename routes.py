@@ -4,10 +4,10 @@ from app import app
 def index():
     return "It works!\n"
 
-@app.route('/a')
+@server.route('/a', methods = ['GET'])
 def a():
     return "On endpoint a"
 
-@app.route('/b')
+@server.route('/b', methods = ['GET'])
 def b():
     return "On endpoint b"
